@@ -23,5 +23,5 @@ const markup = galleryItems
 //добавляем массив в HTML
 gallery.insertAdjacentHTML('afterbegin', markup);
 
-//добавляем SimpleLightbox
+//добавляем SimpleLightbox модалку
 new SimpleLightbox('.gallery__link', { captionsData: 'alt', captionDelay: 250 });
