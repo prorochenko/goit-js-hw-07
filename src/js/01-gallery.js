@@ -1,10 +1,7 @@
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
 
-// console.log(galleryItems);
-
-// 1) Создание и рендер разметки по массиву данных galleryItems и
-// предоставленному шаблону элемента галереи.
+console.log(galleryItems);
 
 //получаем ссылку на галерею
 const gallery = document.querySelector('.gallery');
@@ -12,8 +9,7 @@ const gallery = document.querySelector('.gallery');
 //делаем массив разметки галерии
 function addGalleryItems(items) {
   return items
-    .map(item => {
-      const { preview, original, description } = item;
+    .map(({ preview, original, description }) => {
       return `<div class="gallery__item">
         <a class="gallery__link" href="${original}">
           <img
