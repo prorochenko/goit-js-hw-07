@@ -24,6 +24,4 @@ const markup = galleryItems
 gallery.insertAdjacentHTML('afterbegin', markup);
 
 //добавляем SimpleLightbox
-new SimpleLightbox('.gallery__link', {
-  /* options */
-});
+new SimpleLightbox('.gallery__link', { captionsData: 'alt', captionDelay: 250 });
